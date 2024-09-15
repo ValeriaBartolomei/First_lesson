@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UFT-8">
+    <title>Паспорт</title>
+</head>
+
+<body>
+    <h1 align="center"><font color="orange" size="6" face="areal">Российская федерация</font></h1>
+    <h3 align="center">Удостоверение личности гражданина</h3>
+    <hr color="blue" width="100%" size="2">
+    <p>Фамилия <br><span>АЛЕКСАНДРОВА</span></p>
+    <p>Имя <br>АЛЕКСАНДРА</p>
+    <P>Отчество<br>АЛЕКСАНДРОВНА</P>
+    <p>Дата рождения</p>
+    <p>02.03.1987</p>
+    <p>Место рождения</p>
+    <p>Петропавловск</p>
+    <p>Дата выдачи</p>
+    <p>12.03.2013</p>
+    <p>Номер удостоверения</p>
+    <p>02 41 456789</p>
+</body>
+<script>
+    let second_name= document.getElementsByTagName("span")[0].innerText
+console.log("Старая фамилия: ", second_name);
+let second_name_node= document.getElementsByTagName("span")[0]
+let new_second_name="ИВАНОВ"
+console.log("Новая фамилия: ", new_second_name)
+second_name_node.innerText=new_second_name
+</script>
+</html>
