@@ -42,6 +42,12 @@
     </body>
     <script>
         document.getElementById("origin").innerHTML = "<b>Новый элемент по id</b>"
+        let name = document.getElementById("origin").innerText
+        console.log("Имя: (свойство старое) ", name)
+        let node_name = document.getElementById("origin")
+        console.log("Имя: (свойство узла)", node_name.innerText)
+        node_name.innerText = "Иван"
+        console.log("Имя: (новое свойство узла)", node_name.innerText)
     </script>
 
 </html>
